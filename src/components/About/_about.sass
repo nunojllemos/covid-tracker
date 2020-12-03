@@ -1,0 +1,66 @@
+@import '../../style/sass/variables'
+
+.about-container
+  height: calc(100vh - 70px)
+  display: flex
+  align-items: center
+  .about-text
+    width: 45%
+    padding: 2rem
+    z-index: 1
+    .dash
+      position: relative
+      width: 5rem
+      height: .3rem
+      margin: 2rem 0
+      animation: fillWidth .5s
+      @include transition(background-color)
+    h2
+      position: relative
+      font-size: 3.8rem
+      font-weight: $bold
+      animation: fadeFromTop .5s
+      @include transition(color)
+    .about-project-title
+      margin-top: 6rem
+    p
+      position: relative
+      font-size: 2.4rem
+      font-weight: $regular
+      line-height: 3rem
+      animation: fadeFromLeft .5s
+      @include transition(color)
+      span
+        font-weight: $semiBold
+      a
+        text-decoration: underline
+        @include transition(color)
+        &:visited
+          color: inherit
+  .about-svgs
+    width: 55%
+    height: 50rem
+    z-index: 0
+    position: relative
+    .about-blob-back, .about-blob-front, .about-computer
+      position: absolute
+      path
+        @include transition(fill)
+    .about-blob-back
+      bottom: -17rem
+      right: 10rem
+      animation: fadeFromRight .5s
+    .about-blob-front
+      bottom: 2rem
+      right: 10rem
+      animation: fadeFromRight .4s
+    .about-computer
+      bottom: 0rem
+      right: 10rem
+      animation: fadeFromRight .55s
+
+@keyframes fillWidth
+  0%
+    width: 0rem
+  100%
+    width: 5rem

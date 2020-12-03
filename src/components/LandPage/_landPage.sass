@@ -1,0 +1,60 @@
+@import '../../style/sass/variables'
+
+.landpage
+  display: flex
+  justify-content: space-between
+  padding-top: 20rem
+  margin: 0 0 8rem 0
+  & > div:first-child
+    width: 45%
+    padding: 0 3rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h1
+      position: relative
+      font-size: 3.2rem
+      text-transform: uppercase
+      margin-bottom: 2rem
+      @include transition(color)
+    p
+      font-size: 2.4rem
+      line-height: 2.8rem
+      @include transition(color)
+      &:nth-child(2)
+        font-weight: $medium
+        margin-bottom: 1rem
+      a
+        text-decoration: underline
+        @include transition(color)
+  .landpage-image-container
+    width: 50%
+    position: relative
+    .svg-blob-back
+      svg
+        position: relative
+        bottom: 5rem
+        left: 3rem
+        path
+          @include transition(fill)
+    .svg-blob-front
+      svg
+        position: absolute
+        top: 8rem
+        right: -2rem
+        path
+          @include transition(fill)
+    .svg-man
+      svg
+        bottom: 16.5rem
+        left: 25rem
+        position: absolute
+        path
+          @include transition(fill)
+    .svg-woman
+      svg
+        bottom: 15rem
+        right: 20rem
+        position: absolute
+        path
+          @include transition(fill)

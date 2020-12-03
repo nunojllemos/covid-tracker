@@ -1,0 +1,73 @@
+// colors
+/* light theme */
+$navyBlue: #115A89
+$blue: #3F8EC0
+$skyBlue: #84C6F1
+$airBlue: #C6E3F5
+$white: #FFF
+$black: #000
+
+/* dark theme */
+$darkishBlue: #1A2843
+$darkBlue: #1A2843
+$darkSalmon: #FF6768
+$lightSalmon: #ECB7B7
+
+/* font */
+$font: 'Montserrat', sans-serif
+$regular: 400
+$medium: 500
+$semiBold: 600
+$bold: 700
+
+/* width */
+$maxWidth: 1100px
+
+// mixin
+/* flex */
+@mixin flex()
+  display: flex
+  justify-content: center
+  align-items: center
+
+/* background-image */
+@mixin bg-image($url, $size)
+  background-image: url($url)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: $size
+
+/* transitions */
+@mixin transition($property)
+  transition: $property .2s linear
+
+/* animations */
+@keyframes fadeFromLeft
+  0%
+    opacity: 0
+    left: -5rem
+  100%
+    opacity: 1
+    left: 0rem
+
+@keyframes fadeFromTop
+  0%
+    opacity: 0
+    top: -5rem
+  100%
+    opacity: 1
+    top: 0rem
+
+@keyframes fillWidth
+  0%
+    width: 0rem
+  100%
+    width: 5rem
+
+@keyframes fadeFromRight
+  0%
+    opacity: 0
+    right: 0rem
+  100%
+    opacity: 1
+    right: 10rem

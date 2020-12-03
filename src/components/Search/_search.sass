@@ -1,0 +1,45 @@
+@import '../../style/sass/variables'
+
+.search-container
+  margin: 10rem 0 5rem 0
+  width: 100%
+  padding: 1.6rem 3rem
+  border-radius: .5rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @include transition(border)
+  .icon
+    svg
+      path
+      @include transition(fill)
+  form
+    margin: 0 3rem
+    width: 100%
+    justify-self: flex-start
+    input
+      width: 80%
+      background-color: transparent
+      border: 0
+      outline: none
+      font-size: 2rem
+      @include transition(color)
+  .white-placeholder
+    &::placeholder
+      color: #FFF
+      @include transition(color)
+  .gray-placeholder
+    &::placeholder
+      color: #C8C8C8
+      @include transition(color)
+  .clear-wrapper
+    user-select: none
+    font-weight: $semiBold
+    padding: .8rem 1.3rem
+    border-radius: .3rem
+    opacity: 0
+    @include transition(all)
+  .opacity
+    cursor: pointer
+    opacity: 1
+    @include transition(opacity)

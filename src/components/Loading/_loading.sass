@@ -1,0 +1,92 @@
+@import '../../style/sass/variables'
+
+$color1: $navyBlue
+$color2: $skyBlue
+$negativeValue: -10px
+$positiveValue: 10px
+
+.cssload-spin-box
+  margin: 0 auto
+  width: $positiveValue
+  height: $positiveValue
+  border-radius: 100%
+  box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+  -o-box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+  -ms-box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+  -webkit-box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+  -moz-box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+  animation: cssload-spin ease infinite 4.6s
+  -o-animation: cssload-spin ease infinite 4.6s
+  -ms-animation: cssload-spin ease infinite 4.6s
+  -webkit-animation: cssload-spin ease infinite 4.6s
+  -moz-animation: cssload-spin ease infinite 4.6s
+
+@keyframes cssload-spin
+  0%,
+  100%
+    box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+
+  25%
+    box-shadow: $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1
+
+  50%
+    box-shadow: $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2
+
+  75%
+    box-shadow: $positiveValue $negativeValue  $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue  $color2, $negativeValue $negativeValue $color1
+
+@-o-keyframes cssload-spin
+	0%,
+	100%
+  box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+
+	25%
+  box-shadow: $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1
+
+	50%
+  box-shadow: $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2
+
+	75%
+  box-shadow: $positiveValue $negativeValue  $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue  $color2, $negativeValue $negativeValue $color1
+
+@-ms-keyframes cssload-spin
+	0%,
+	100%
+  box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+
+	25%
+  box-shadow: $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1
+
+	50%
+  box-shadow: $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2
+
+	75%
+  box-shadow: $positiveValue $negativeValue  $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue  $color2, $negativeValue $negativeValue $color1
+
+@-webkit-keyframes cssload-spin
+	0%,
+	100%
+  box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+
+	25%
+  box-shadow: $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1
+
+	50%
+  box-shadow: $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2
+
+	75%
+  box-shadow: $positiveValue $negativeValue  $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue  $color2, $negativeValue $negativeValue $color1
+
+@-moz-keyframes cssload-spin
+	0%,
+	100%
+  box-shadow: $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2
+
+	25%
+  box-shadow: $negativeValue $positiveValue $color2, $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1
+
+	50%
+  box-shadow: $negativeValue $negativeValue $color1, $positiveValue $negativeValue $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue $color2
+
+	75%
+  box-shadow: $positiveValue $negativeValue  $color2, $positiveValue $positiveValue $color1, $negativeValue $positiveValue  $color2, $negativeValue $negativeValue $color1

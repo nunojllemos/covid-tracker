@@ -1,0 +1,30 @@
+@import '../../style/sass/variables'
+
+.table-list
+  .table-line-container
+    height: 8rem
+    margin: 1rem 0
+    &:first-child
+      margin: 3rem 0 0 0
+  div
+    font-size: 1.6rem
+  .flag-name-container
+    width: 25%
+    display: flex
+    align-items: center
+    img
+      width: 3.5rem
+      height: 2.4rem
+      margin-right: 1.5rem
+  .active, .recovered, .deaths, .total-cases
+    display: flex
+    align-items: center
+    & div , & p
+      justify-self: flex-start
+    .active-plus-data
+      color: white
+      margin-left: 1rem
+      font-weight: $regular
+      font-size: 1.2rem
+      padding: .3rem .6rem
+      border-radius: .2rem

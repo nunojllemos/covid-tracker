@@ -1,0 +1,26 @@
+@import '../../style/sass/variables'
+
+.global-stats
+  .global-stats-title
+    font-size: 2.4rem
+    margin-bottom: 1.5rem
+    @include transition(color)
+  .global-stats-today
+    font-size: 2.4rem
+    font-weight: $medium
+    margin-bottom: .3rem
+    @include transition(color)
+  .global-stats-yesterday
+    display: flex
+    align-items: center
+    .global-stats-plus-cases
+      font-size: 1.2rem
+      font-weight: $semiBold
+      border-radius: .2rem
+      padding: .3rem .5rem
+      margin-right: .5rem
+      @include transition(background-color)
+      @include transition(color)
+    p
+      font-weight: $medium
+      @include transition(color)

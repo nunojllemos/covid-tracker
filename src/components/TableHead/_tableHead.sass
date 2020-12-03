@@ -1,0 +1,21 @@
+@import '../../style/sass/variables'
+
+.table-line-container
+  padding: 2rem
+  display: flex
+  align-items: center
+  @include transition(background-color)
+  div
+    font-size: 1.8rem
+    font-weight: $medium
+    @include transition(color)
+  .number
+    width: 5%
+  .country
+    width: 25%
+  .active,
+  .recovered,
+  .deaths,
+  .total-cases
+    width: calc(70% / 4)
+    padding: 0 1.5rem

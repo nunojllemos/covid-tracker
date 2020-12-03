@@ -1,0 +1,18 @@
+@import '../../style/sass/variables'
+
+.global-tab-container
+  @include transition(border-bottom)
+  .global-tab
+    width: 31rem
+    padding: 1rem 0
+    border-radius: 2rem 0 0 0
+    @include flex()
+    h2
+      font-size: 2.8rem
+      text-transform: uppercase
+      @include transition(color)
+.global-stats-container
+  margin: 4rem 0
+  padding: 0 3rem
+  display: flex
+  justify-content: space-between

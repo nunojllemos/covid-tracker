@@ -1,4 +1,5 @@
 # Covid Tracker - 🔍 Search Country, 🌍 Find it and 📊 See data!
+Visit it [here](https://nunojllemos-covid-tracker.netlify.app/)
 
 In this app you can track the global stats of **active**, **deaths**, **recovered** and **total cases** of Covid-19.
 You can also search for country and find the stats for them. 
